@@ -1,0 +1,24 @@
+.userChoice{
+    position: relative;
+    left: 135px;
+    bottom: 17px;
+    padding-bottom: 100px;
+}
+
+
+#sortable{
+    position: relative;
+    left: 100px;
+}
+
+#nonDraggable{
+    position: absolute;
+    left: 170px;
+    top: 300px;
+    text-align: center;
+}
+
+#login{
+    position: relative;
+    left: 1px;
+}

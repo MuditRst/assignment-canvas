@@ -1,0 +1,46 @@
+<%- include('header'); -%>
+<div>
+    <form action="/login" method="POST">
+
+        <label for="">User Choice:</label><br>
+        <div class="userChoice" id="userChoice">
+            <input type="checkbox" id="emailchecc" name="emailchecc" value="10" checked>
+            <label for="emailchecc">Email</label><br>
+            <input type="checkbox" id="phonenum" value="0" onclick="showDiv()">
+            <label for="pnochecc">Phone Number</label>
+        </div>
+        <div id="TestDiv">
+        </div>
+
+        <div id="GeneratedDes">
+            <label for="">Generated Design:</label><br>
+            <ul id="sortable" style="list-style-type: none;">
+                <li id="emailPass" style="width: 210px;">
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" required><br>
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password" required><br>
+                    </div>
+                </li>
+                
+                <li id="phonenoDiv" style="width: 210px;">
+                    <div >
+                        <label for="phonenumber">Phone Number</label><br>
+                        <input type="text" name="phonenumber" id="pnum"><br>
+                        <h3 id="downor">Or</h3>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="nonDraggable">
+                <input type="submit" value="Login" id="login">
+                <h5>New user? <a href="/signup">Sign Up</a></h5>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+<%- include('footer'); -%>
+    
